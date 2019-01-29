@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Product.delete_all
+x = 1
+10.times do |i|
+    Product.create(name:"producto #{x}", price:(x*1000))
+    x += 1
+end
